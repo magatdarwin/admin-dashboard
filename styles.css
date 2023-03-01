@@ -23,3 +23,41 @@ aside ul {
   display: grid;
   gap: 20px;
 }
+
+header {
+  display: grid;
+  grid-template-rows: repeat(auto-fit, minmax(10px, 1fr));
+  gap: 10px;
+  padding: 10px 40px;
+  height: 200px;
+}
+
+header .navigation {
+  display: grid;
+  grid-template-columns: auto 1fr repeat(3, auto);
+  gap: 20px;
+  height: 100%;
+  align-items: center;
+}
+
+header .user-control {
+  display: grid;
+  grid-template-columns: 5fr repeat(3, 1fr);
+  gap: 20px;
+  align-items: center;
+}
+
+header .profile {
+  height: 50px;
+}
+
+.profile {
+  display: grid;
+  grid-template-columns: 1fr 4fr ;
+  grid-template-rows: repeat(auto-fit, minmax(10px, 1fr));
+  align-items: center;
+}
+
+.profile span {
+  grid-row: 1 / 3;
+}
