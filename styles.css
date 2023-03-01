@@ -5,4 +5,11 @@
 
 body {
   height: 100vh;
+  display: grid;
+  grid-template: 1fr 5fr / 1fr 5fr;
+}
+
+aside {
+  grid-column: 1 / 1;
+  grid-row: 1 / -1;
 }
