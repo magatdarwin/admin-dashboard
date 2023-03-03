@@ -3,9 +3,11 @@
   border: 1px dashed gray;
 }
 
+:root {
+  font-size: 14px;
+}
+
 body {
-  margin: 0;
-  padding: 0;
   height: 100vh;
   display: grid;
   grid-template: 1fr 5fr / 1fr 5fr;
@@ -61,3 +63,35 @@ header .profile {
 .profile span {
   grid-row: 1 / 3;
 }
+
+h1 {
+  margin: 10px 0;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: repeat(2, 1fr);
+  gap: 30px;
+  padding: 20px;
+}
+
+.projects-container {
+  grid-row: 1 / 3;
+}
+
+.projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  /* grid-template-columns: repeat(2, minmax(300px, 1fr));
+  grid-template-rows: 30px repeat(auto-fit, minmax(100px, 200px)); */
+  gap: 30px;
+}
+
+.projects .card {
+  border: 1px solid gray;
+  border-radius: 10px;
+  border-left: 10px solid orange;
+  padding: 20px;
+}
+
