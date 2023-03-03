@@ -1,6 +1,6 @@
 * {
   box-sizing: border-box;
-  border: 1px dashed gray;
+  /* border: 1px dashed gray; */
 }
 
 :root {
@@ -11,6 +11,7 @@ body {
   height: 100vh;
   display: grid;
   grid-template: 1fr 5fr / 1fr 5fr;
+  margin: 0;
 }
 
 aside {
@@ -19,6 +20,8 @@ aside {
   display: grid;
   gap: 20px;
   align-content: start;
+  background-color: rgb(25,146,212);
+  color: white;
 }
 
 aside ul {
@@ -32,6 +35,7 @@ header {
   gap: 10px;
   padding: 10px 40px;
   height: 200px;
+  background-color: white;
 }
 
 header .navigation {
@@ -74,6 +78,7 @@ main {
   grid-template-rows: repeat(2, 1fr);
   gap: 30px;
   padding: 20px;
+  background-color: rgb(226,232,240);
 }
 
 .projects-container {
@@ -89,9 +94,17 @@ main {
 }
 
 .projects .card {
-  border: 1px solid gray;
   border-radius: 10px;
   border-left: 10px solid orange;
   padding: 20px;
+  background-color: white;
 }
 
+.other-info {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  border-radius: 10px;
+  padding: 20px;
+  background-color: white;
+}
