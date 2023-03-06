@@ -52,15 +52,16 @@ header .user-control {
   align-items: center;
 }
 
-header .profile {
-  height: 50px;
-}
-
 .profile {
   display: grid;
-  grid-template-columns: 1fr 4fr ;
-  grid-template-rows: repeat(auto-fit, minmax(10px, 1fr));
+  grid-template-columns: auto 1fr;
+  grid-template-rows: auto auto;
   align-items: center;
+  gap: 5px 30px; 
+}
+
+.profile p {
+  margin: 0;
 }
 
 .profile span {
