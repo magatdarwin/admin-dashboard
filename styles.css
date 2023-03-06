@@ -10,7 +10,8 @@
 body {
   min-height: 100vh;
   display: grid;
-  grid-template: 1fr 5fr / 1fr 5fr;
+  /* grid-template: 1fr 7fr / 1fr 5fr; */
+  grid-template: auto 4fr/ 1fr 4fr;
   margin: 0;
 }
 
@@ -75,22 +76,24 @@ h1, h2, h3 {
 main {
   display: grid;
   grid-template-columns: 2fr 1fr;
-  grid-template-rows: repeat(2, 1fr);
+  grid-template-rows: repeat(2, auto);
   gap: 30px;
   padding: 20px;
   background-color: rgb(226,232,240);
 }
 
-.projects-container {
-  grid-row: 1 / 3;
-}
-
 .projects {
+  grid-row: 1 / 3;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-  /* grid-template-columns: repeat(2, minmax(300px, 1fr));
-  grid-template-rows: 30px repeat(auto-fit, minmax(100px, 200px)); */
+  grid-template-rows: auto 1fr;
+  grid-auto-rows: 1fr;
   gap: 30px;
+  
+}
+main h1 {
+  grid-column: 1 / -1;
+  margin: 0;
 }
 
 .projects .card {
