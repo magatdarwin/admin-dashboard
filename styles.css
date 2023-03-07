@@ -57,6 +57,9 @@ nav li {
 .icon {
   width: 1.5rem;
   height: 1.5rem;
+}
+
+nav .icon {
   filter: invert(100%) sepia(0%) saturate(7500%) hue-rotate(111deg) brightness(98%) contrast(107%);
 }
 
@@ -95,8 +98,8 @@ header .user-control {
   margin: 0;
 }
 
-.profile span {
-  grid-row: 1 / 3;
+.profile .display-photo {
+  grid-row: 1 / -1;
 }
 
 h1, h2, h3 {
@@ -153,4 +156,31 @@ hr {
   border-top:1px solid #555;
   margin:0;
   height:1px;
+}
+
+.display-photo {  
+  border-radius: 50%;
+  width: 3rem;
+  height: 3rem;
+}
+
+.user-control .display-photo {
+  width: 4.5rem;
+  height: 4.5rem;
+}
+
+.yellow {
+  background-color: #ffe100;
+}
+
+.light-blue {
+  background-color: lightblue;
+}
+
+.pink {
+  background-color: pink;
+}
+
+.gray {
+  background-color: gray;
 }
