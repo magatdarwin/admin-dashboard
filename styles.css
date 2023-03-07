@@ -14,7 +14,7 @@ body {
   margin: 0;
 }
 
-aside {
+nav {
   grid-column: 1 / 1;
   grid-row: 1 / -1;
   display: grid;
@@ -22,11 +22,40 @@ aside {
   align-content: start;
   background-color: rgb(25,146,212);
   color: white;
+  font-size: 1.3rem;
+  padding-left: 25px;
 }
 
-aside ul {
+nav .title {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  gap: 20px;
+}
+
+.title .icon {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+nav ul {
   display: grid;
   gap: 20px;
+  list-style-type: none;
+  padding: 0;
+}
+
+nav li {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  gap: 20px;
+}
+
+.icon {
+  width: 1.5rem;
+  height: 1.5rem;
+  filter: invert(100%) sepia(0%) saturate(7500%) hue-rotate(111deg) brightness(98%) contrast(107%);
 }
 
 header {
