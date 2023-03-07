@@ -23,8 +23,7 @@ nav {
   background-color: rgb(25,146,212);
   color: white;
   font-size: 1.3rem;
-  padding-left: 25px;
-  padding-top: 10px;
+  padding: 20px 25px;
   font-weight: 900;
 }
 
@@ -66,8 +65,9 @@ nav .icon {
 header {
   display: grid;
   grid-template-rows: 1fr 1fr;
-  gap: 10px;
-  padding: 10px 40px;
+  align-items: start;
+  /* gap: 10px; */
+  padding: 20px 40px;
   background-color: white;
 }
 
