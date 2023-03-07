@@ -75,8 +75,11 @@ header .navigation {
   display: grid;
   grid-template-columns: auto 1fr repeat(3, auto);
   gap: 20px;
-  height: 100%;
   align-items: center;
+}
+
+header input[type="text"] {
+  width: 70%;
 }
 
 header .user-control {
